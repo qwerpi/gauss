@@ -6,7 +6,7 @@
 double **mat;
 int n, m;
 double *result;
-int pivot;
+volatile int pivot;
 
 void do_row(void *arg) {
 	long row = (long)arg;
