@@ -1,0 +1,18 @@
+matrices are 2d arrays of doubles
+c style pointers to array of pointers
+
+randomly generated matrices are filled with doubles between 1 and 10000
+
+ for k = 1 ... m:
+   Find pivot for column k:
+   i_max  := argmax (i = k ... m, abs(A[i, k]))
+   if A[i_max, k] = 0
+     error "Matrix is singular!"
+   swap rows(k, i_max)
+   Do for all rows below pivot:
+    for i = k + 1 ... m:
+     Do for all remaining elements in current row:
+      for j = k ... n:
+       A[i, j]  := A[i, j] - A[k, j] * (A[i, k] / A[k, k])
+     Fill lower triangular matrix with zeros:
+     A[i, k]  := 0
