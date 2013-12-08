@@ -17,6 +17,9 @@ medium : gauss
 big : gauss
 	./gauss 1000
 
+bigger : gauss
+	./gauss 2000
+
 huge : gauss
 	./gauss 10000
 

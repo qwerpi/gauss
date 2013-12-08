@@ -43,7 +43,7 @@ void gauss_elim_openmp() {
 
 		pivot = k;
 
-		#pragma omp parallel for schedule(static, 1)
+		#pragma omp parallel for
 		for (int i = n - 1; i > k; i--) {
 			double coef = mat[i][k] / mat[k][k];
 			for (int j = k; j < m; j++) {
