@@ -7,10 +7,11 @@ extern double *result;
 
 // void gauss_elim(double **mat, int m, int n);
 // void back_sub(double *result, double **mat, int m, int n);
-void gauss_elim(void);
+void gauss_elim_openmp(void);
+void gauss_elim_pthread(void);
 void gauss_elim_single(void);
 void back_sub(void);
 
-void printmat(double **mat, int m, int n, int pivot);
+void printmat(int pivot);
 
 #endif

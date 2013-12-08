@@ -1,4 +1,4 @@
-FLAGS = -O3 -pthread -std=gnu++11
+FLAGS = -O3 -pthread -std=gnu++0x -fopenmp
 CPPFILES = main.cpp gauss.cpp
 
 all : gauss

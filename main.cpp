@@ -50,7 +50,7 @@ int main(int argc, char **argv) {
 	// printmat(-1);
 
 	gettimeofday(&t1, NULL);
-	gauss_elim();
+	gauss_elim_openmp();
 	gettimeofday(&t2, NULL);
 
 	result = (double *) calloc(n, sizeof(double));
