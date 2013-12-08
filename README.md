@@ -1,4 +1,4 @@
 gauss
 =====
 
-Parallel implementation of Gaussian elimination using pthreads.
+Parallel implementation of Gaussian elimination.
