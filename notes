@@ -1,3 +1,6 @@
+To run on lonestar:
+module swap intel gcc/4.4.5
+
 matrices are 2d arrays of doubles
 c style pointers to array of pointers
 
