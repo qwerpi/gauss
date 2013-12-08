@@ -1,0 +1,161 @@
+medium = 100 equations
+1
+----------------------
+forward elimination: 989 microseconds
+back substitution  : 13 microseconds
+2
+----------------------
+forward elimination: 1204 microseconds
+back substitution  : 15 microseconds
+3
+----------------------
+forward elimination: 2142 microseconds
+back substitution  : 15 microseconds
+4
+----------------------
+forward elimination: 4035 microseconds
+back substitution  : 15 microseconds
+5
+----------------------
+forward elimination: 8117 microseconds
+back substitution  : 15 microseconds
+6
+----------------------
+forward elimination: 4252 microseconds
+back substitution  : 15 microseconds
+7
+----------------------
+forward elimination: 12126 microseconds
+back substitution  : 14 microseconds
+8
+----------------------
+forward elimination: 12184 microseconds
+back substitution  : 17 microseconds
+9
+----------------------
+forward elimination: 4153 microseconds
+back substitution  : 15 microseconds
+10
+----------------------
+forward elimination: 20235 microseconds
+back substitution  : 16 microseconds
+11
+----------------------
+forward elimination: 20277 microseconds
+back substitution  : 17 microseconds
+12
+----------------------
+forward elimination: 59970 microseconds
+back substitution  : 16 microseconds
+13
+----------------------
+forward elimination: 7709 microseconds
+back substitution  : 18 microseconds
+14
+----------------------
+forward elimination: 8411 microseconds
+back substitution  : 18 microseconds
+15
+----------------------
+forward elimination: 8902 microseconds
+back substitution  : 18 microseconds
+16
+----------------------
+forward elimination: 9452 microseconds
+back substitution  : 18 microseconds
+17
+----------------------
+forward elimination: 7066 microseconds
+back substitution  : 17 microseconds
+18
+----------------------
+forward elimination: 10585 microseconds
+back substitution  : 19 microseconds
+19
+----------------------
+forward elimination: 11089 microseconds
+back substitution  : 19 microseconds
+20
+----------------------
+forward elimination: 11575 microseconds
+back substitution  : 19 microseconds
+21
+----------------------
+forward elimination: 12075 microseconds
+back substitution  : 19 microseconds
+22
+----------------------
+forward elimination: 12592 microseconds
+back substitution  : 20 microseconds
+23
+----------------------
+forward elimination: 13040 microseconds
+back substitution  : 19 microseconds
+24
+----------------------
+forward elimination: 13459 microseconds
+back substitution  : 20 microseconds
+25
+----------------------
+forward elimination: 14398 microseconds
+back substitution  : 32 microseconds
+26
+----------------------
+forward elimination: 14431 microseconds
+back substitution  : 20 microseconds
+27
+----------------------
+forward elimination: 13343 microseconds
+back substitution  : 18 microseconds
+28
+----------------------
+forward elimination: 15960 microseconds
+back substitution  : 19 microseconds
+29
+----------------------
+forward elimination: 15443 microseconds
+back substitution  : 19 microseconds
+30
+----------------------
+forward elimination: 16552 microseconds
+back substitution  : 19 microseconds
+31
+----------------------
+forward elimination: 16079 microseconds
+back substitution  : 19 microseconds
+32
+----------------------
+forward elimination: 16369 microseconds
+back substitution  : 13 microseconds
+33
+----------------------
+forward elimination: 16644 microseconds
+back substitution  : 13 microseconds
+34
+----------------------
+forward elimination: 18393 microseconds
+back substitution  : 20 microseconds
+35
+----------------------
+forward elimination: 18026 microseconds
+back substitution  : 17 microseconds
+36
+----------------------
+forward elimination: 18130 microseconds
+back substitution  : 18 microseconds
+37
+----------------------
+forward elimination: 16611 microseconds
+back substitution  : 20 microseconds
+38
+----------------------
+forward elimination: 19081 microseconds
+back substitution  : 19 microseconds
+39
+----------------------
+forward elimination: 15117 microseconds
+back substitution  : 16 microseconds
+40
+----------------------
+forward elimination: 17514 microseconds
+back substitution  : 18 microseconds
