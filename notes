@@ -1,6 +1,9 @@
 To run on lonestar:
 module swap intel gcc/4.4.5
 
+To compile with some number of threads
+g++ -O3 -pthread -std=gnu++0x -fopenmp -o gauss main.cpp gauss.cpp -DNTHREADS=2
+
 matrices are 2d arrays of doubles
 c style pointers to array of pointers
 

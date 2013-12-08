@@ -4,7 +4,9 @@
 #include <stdint.h>
 #include "gauss.h"
 
+#ifndef NTHREADS
 #define NTHREADS 2
+#endif
 
 double **mat;
 int n, m;
@@ -148,3 +150,4 @@ void printmat(int pivot) {
 	}
 	std::cout << std::endl;
 }
+

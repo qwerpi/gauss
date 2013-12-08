@@ -25,3 +25,4 @@ huge : gauss
 
 clean :
 	rm -rf *.o gauss
+
