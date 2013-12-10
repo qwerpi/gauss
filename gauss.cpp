@@ -13,11 +13,17 @@ int n, m;
 double *result;
 volatile int pivot;
 
-void do_row(void *arg) {
+void do_rows(void *arg) {
 	long row = (long)arg;
-	double coef = mat[row][pivot] / mat[pivot][pivot];
-	for (int j = pivot; j < m; j++) {
-		mat[row][j] -= coef * mat[pivot][j];
+	while (row <= pivot)
+		row += NTHREADS;
+	while (row < n) {
+		// std::cout << "Doing row " << row << std::endl;
+		double coef = mat[row][pivot] / mat[pivot][pivot];
+		for (int j = pivot; j < m; j++) {
+			mat[row][j] -= coef * mat[pivot][j];
+		}
+		row += NTHREADS;
 	}
 }
 
@@ -60,7 +66,7 @@ void gauss_elim_openmp() {
 void gauss_elim_pthread() {
 	// printmat(-1);
 
-	pthread_t threads[n];
+	pthread_t threads[NTHREADS];
 
 	for (int k = 0; k < n; k++) {
 		double max = -1000000000.0;
@@ -81,11 +87,11 @@ void gauss_elim_pthread() {
 
 		pivot = k;
 
-		for (int i = k + 1; i < n; i++) {
-			pthread_create(&threads[i], NULL, (void *(*)(void *))do_row, (void *)(long)i);
+		for (int i = 0; i < NTHREADS; i++) {
+			pthread_create(&threads[i], NULL, (void *(*)(void *))do_rows, (void *)(long)i);
 		}
 
-		for (int i = k + 1; i < n; i++) {
+		for (int i = 0; i < NTHREADS; i++) {
 			pthread_join(threads[i], NULL);
 		}
 

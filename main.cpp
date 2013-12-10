@@ -51,6 +51,7 @@ int main(int argc, char **argv) {
 
 	gettimeofday(&t1, NULL);
 	gauss_elim_openmp();
+	// gauss_elim_pthread();
 	gettimeofday(&t2, NULL);
 
 	result = (double *) calloc(n, sizeof(double));
