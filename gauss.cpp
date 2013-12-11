@@ -14,9 +14,8 @@ double *result;
 volatile int pivot;
 
 void do_rows(void *arg) {
-	long row = (long)arg;
-	while (row <= pivot)
-		row += NTHREADS;
+	long row = (long)arg + pivot;
+	if (row == pivot)	row += NTHREADS;
 	while (row < n) {
 		// std::cout << "Doing row " << row << std::endl;
 		double coef = mat[row][pivot] / mat[pivot][pivot];
